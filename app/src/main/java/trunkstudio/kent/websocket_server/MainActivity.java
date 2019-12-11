@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     //  Toast.makeText(content, e.getMessage(), Toast.LENGTH_LONG).show();
     //}
 
-    Subscription s = ZeRXconf.advertise(this, "Secure Websocket", "_http._tcp.", 8887, getAttributes())
+    Subscription s = ZeRXconf.advertise(this, "Secure WebSocket Server", "_http._tcp.", 8887, getAttributes())
         .subscribe(onNext, onError);
 
   }
